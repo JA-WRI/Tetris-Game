@@ -1,0 +1,43 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Tetris
+{
+    public abstract class Block
+    {
+        protected abstract Position[][] Tiles { get; }
+        protected abstract Position StartOffset { get; }
+        public abstract int Id { get; }
+
+        private int rotationState;
+        private Position offset;
+
+        public Block()
+        {
+            offset = new Position(StartOffset.Rows, StartOffset.Columns);
+        }
+        public IEnumerable<Position> TilePostions()
+        {
+            foreach (Position p in Tiles[rotationState])
+            {
+                yield return new Position(p.Rows + offset.Rows, p.Columns + offset.Columns);
+            }
+        }
+        public void RotateCW()
+        {
+            rotationState = (rotationState + 1) % Tiles.Length;
+        }
+        public void RotateCCW()
+        {
+            if (rotationState == 0)
+            {
+                rotationState = Tiles.Length - 1;
+            }
+            else
+            {
+                rotationState--;
+            }
+        }
+    }
+}
