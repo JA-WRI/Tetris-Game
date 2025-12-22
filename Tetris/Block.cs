@@ -17,6 +17,7 @@ namespace Tetris
         {
             offset = new Position(StartOffset.Rows, StartOffset.Columns);
         }
+
         public IEnumerable<Position> TilePostions()
         {
             foreach (Position p in Tiles[rotationState])
@@ -24,6 +25,7 @@ namespace Tetris
                 yield return new Position(p.Rows + offset.Rows, p.Columns + offset.Columns);
             }
         }
+
         public void RotateCW()
         {
             rotationState = (rotationState + 1) % Tiles.Length;
@@ -39,5 +41,18 @@ namespace Tetris
                 rotationState--;
             }
         }
+        public void Move(int rows, int columns)
+        {
+            offset.Rows += rows;
+            offset.Columns += columns;
+
+        }
+        public void Reset()
+        {
+            rotationState = 0;
+            offset.Rows = StartOffset.Rows;
+            offset.Columns = StartOffset.Columns; 
+        }
+
     }
 }

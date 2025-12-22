@@ -6,8 +6,8 @@ namespace Tetris
 {
     public class Position
     {
-        public int Rows { get; }
-        public int Columns { get; }
+        public int Rows { get; set; }
+        public int Columns { get; set; }
 
         public Position(int rows, int columns)
         {
