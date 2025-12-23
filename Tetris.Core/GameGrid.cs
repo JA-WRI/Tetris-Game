@@ -72,7 +72,7 @@ namespace Tetris.Core
             }
 
         }
-
+        //Clearing all the rows that are full and moving the rows above them down
         public int ClearFullRows()
         {
             int cleared = 0;
