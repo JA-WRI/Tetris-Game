@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Tetris
+namespace Tetris.Core
 {
     public class Position
     {

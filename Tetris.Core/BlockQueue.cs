@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using System.Windows.Navigation;
 
-namespace Tetris
+namespace Tetris.Core
 {
     public class BlockQueue
     {

@@ -1,3 +1,5 @@
 <Solution>
+  <Project Path="Tetris.Core/Tetris.Core.csproj" />
+  <Project Path="Tetris.Tests/Tetris.Tests.csproj" Id="ef4c5209-34f4-4eb7-a201-61ec66a58050" />
   <Project Path="Tetris/Tetris.csproj" />
 </Solution>
