@@ -9,14 +9,14 @@
 Classic Tetris implemented in **C#**, featuring **unit testing with xUnit** and **continuous integration using GitHub Actions**.
  Includes Falling tetrominoes, Rotation and movement, Collision detection, Line clearing, Game-over logic.
 
-## How to Run
+## Getting Started
 
 ### Prerequisites
 
 - [.NET SDK](https://dotnet.microsoft.com/download)
 - Git
 
-### Clone the Repository
+### How to Run
 
 ```bash
 git clone https://github.com/JA-WRI/Tetris-Game.git
