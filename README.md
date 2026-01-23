@@ -9,6 +9,10 @@
 Classic Tetris implemented in **C#**, featuring **unit testing with xUnit** and **continuous integration using GitHub Actions**.
  Includes Falling tetrominoes, Rotation and movement, Collision detection, Line clearing, Game-over logic.
 
+<img width="919" height="829" alt="Screenshot 2026-01-21 094219" src="https://github.com/user-attachments/assets/9d17a0c5-c3cc-40f5-a3f7-76c162e328c4" />
+
+<img width="1052" height="824" alt="Screenshot 2026-01-21 095307" src="https://github.com/user-attachments/assets/208efab9-17e4-4c5d-9d38-365a60bcf40a" />
+
 ## Getting Started
 
 ### Prerequisites
